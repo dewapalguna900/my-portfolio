@@ -1,4 +1,5 @@
 import Photo from "./../assets/photo.png";
+import languageFunc from "./language-func.js";
 import tailwindAlert from "./tailwind-alert.js";
 
 const loadPageObjects = {
@@ -16,6 +17,9 @@ const loadPageObjects = {
                 document.querySelector('#body-content').innerHTML = responseText;
                 if (page === 'home') {
                     document.querySelector("#profile-img").src = Photo;
+                }
+                else if (page === 'about') {
+                    languageFunc.aboutMeTextTranslate();
                 }
             })
             .catch(err => console.log(err));
