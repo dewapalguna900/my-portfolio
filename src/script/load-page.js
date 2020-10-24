@@ -26,7 +26,7 @@ const loadPageObjects = {
     },
     checkFirstLoad: function () {
         let page = window.location.hash.substr(1);
-        const pagesUrl = ['home', 'skill', 'about'];
+        const pagesUrl = ['home', 'skill', 'education', 'about'];
         if (page === "" || !pagesUrl.includes(page)) {
             page = "home";
         }

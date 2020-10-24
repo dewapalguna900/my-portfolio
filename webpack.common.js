@@ -47,6 +47,10 @@ module.exports = {
             template: "./src/pages/skill.html",
             filename: "pages/skill.html"
         }),
+        new HtmlWebpackPlugin({
+            template: "./src/pages/education.html",
+            filename: "pages/education.html"
+        }),
         /* Clean Dist Folder every run */
         new CleanWebpackPlugin()
     ],
