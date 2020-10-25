@@ -3,7 +3,7 @@ import languageFunc from "./language-func.js";
 import tailwindAlert from "./tailwind-alert.js";
 
 const loadPageObjects = {
-    navUrl: ['home', 'skill', 'education', 'about'],
+    navUrl: ['home', 'skill', 'education', 'about', 'works'],
     loadPage: function (page) {
         fetch(`pages/${page}.html`)
             .then(response => {
